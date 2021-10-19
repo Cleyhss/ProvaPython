@@ -38,16 +38,16 @@ class Rec(Resource):
         try:
             return receita[indice]
         except IndexError:
-            message = "ID {} não encontrado!".format(indice)
+            message = "Indice {} não encontrado!".format(indice)
             return {
+                "status": "Erro de índice!"
                 "mensage": message,
-                "status": "Erro!"
             }
         except:
-            message = "ID {} não encontrado!".format(indice)
+            message = "Erro desconhecido"
             return {
+                "status": "Erro de índice",
                 "mensage": message,
-                "status": "Erro desconhecido!"
             }
 
 
