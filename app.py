@@ -62,7 +62,7 @@ class Rec(Resource):
     def delete(self, indice):
         receita.pop(indice)
         return {
-            "message": "Removido!",
+            "message": "Deleted!",
             "Lista de Receitas": receita
         }
 
